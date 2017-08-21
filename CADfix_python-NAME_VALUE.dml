@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<model type="PluginModel" id="f447a286-e006-1004-8f92-c88a33bdbc8d" name="CADfix_python" pluginType="NAME_VALUE">
+    <modelinfo>
+        <version>0.0.2</version>
+    </modelinfo>
+    <parameters>
+        <parameter id="f447a298-e006-1004-8f92-c88a33bdbc8d" name="inputFile">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+        <parameter id="f447a29b-e006-1004-8f92-c88a33bdbc8d" name="convertTo">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+        <parameter id="f447a29e-e006-1004-8f92-c88a33bdbc8d" name="outputFile">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String"></dataobject>
+            </data>
+        </parameter>
+    </parameters>
+    <contexts>
+        <context id="BUILD_CXT" name="Build View">
+            <modelobjects>
+                <parameter name="inputFile" idRef="f447a298-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>
+                <parameter name="convertTo" idRef="f447a29b-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>
+                <parameter name="outputFile" idRef="f447a29e-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>
+            </modelobjects>
+        </context>
+        <context id="FILE_CXT" name="Files"/>
+    </contexts>
+    <mappings>
+        <modelMappings>
+            <mappedParameter name="outputFile" idRef="f447a29e-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d">outputFile</mappedParameter>
+            <mappedParameter name="inputFile" idRef="f447a298-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d">inputFile</mappedParameter>
+            <mappedParameter name="convertTo" idRef="f447a29b-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d">convertTo</mappedParameter>
+        </modelMappings>
+    </mappings>
+    <dependencies>
+        <dependency idRef="f447a29e-e006-1004-8f92-c88a33bdbc8d">
+            <parameter name="inputFile" idRef="f447a298-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>
+            <parameter name="convertTo" idRef="f447a29b-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>
+        </dependency>
+    </dependencies>
+    <setup>
+        <parameter id="input file location" name="input file location">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\Users\Gavin\Desktop\Chicago\DMDII\CADfix_project\in.txt</filePath>
+                    <fileType>Text</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="output file location" name="output file location">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\Users\Gavin\Desktop\Chicago\DMDII\CADfix_project\out.txt</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="executable location" name="executable location">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\Python27\python.exe</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="command line arguments" name="command line arguments">
+            <currentType value="String"/>
+            <data>
+                <dataobject type="String">C:\Users\Gavin\Desktop\Chicago\DMDII\CADfix_project\CADfix_exec.py</dataobject>
+            </data>
+        </parameter>
+    </setup>
+    <auxfiles/>
+</model>

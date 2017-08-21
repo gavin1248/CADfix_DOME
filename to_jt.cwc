@@ -1,0 +1,483 @@
+
+  cwc,version                                               : 1100.19362
+
+  preferredUnits                    [MM, CM, M, INCH, FOOT] : MM
+  maxWizardTol                                 [OFF, value] : OFF
+  workSet                                      [ALL, value] : ALL
+  continueOnError                                    [0, 1] : 1
+  saveBetweenOps                                     [0, 1] : 0
+  saveOnExport                                       [0, 1] : 1
+  diagnosticCheck                     [ALWAYS, FAIL, NEVER] : FAIL
+  qualityStandard                [nocheck, jama45, jamaALL] : nocheck
+  longNames                                 [DEFAULT, 0, 1] : DEFAULT
+  licenceTimeOut                            [NOWAIT, value] : NOWAIT
+  batchFeatures                               [NULL, value] : NULL
+
+  massProps,sagTol                         [DEFAULT, value] : DEFAULT
+  massProps,turnTol                        [DEFAULT, value] : 15.0
+  massProps,filename                       [DEFAULT, value] : DEFAULT
+  massProps,append                                   [0, 1] : 0
+  massProps,format                         [DEFAULT, value] : DEFAULT
+  massProps,defaultDensity                 [DEFAULT, value] : 1.0
+
+import                                                  [1] : 1
+
+  import,colours                                     [0, 1] : 1
+  import,layers                                      [0, 1] : 1
+  import,labels                                      [0, 1] : 1
+  import,userAttrs                                   [0, 1] : 1
+  import,blanked                                     [0, 1] : 0
+  import,combined                                    [0, 1] : 0
+  import,groups                                      [0, 1] : 0
+  import,shellsAsBodies                              [0, 1] : 0
+  import,codePage                             [NULL, value] : NULL
+  import,assemblies,mode         [COMPLETE, EACH, SELECTED] : COMPLETE
+  import,assemblies,subpartid                 [NULL, value] : NULL
+  import,assemblies,explode                          [0, 1] : 0
+  import,assemblies,emptyComponents                  [0, 1] : 1
+  import,assemblies,freeLines                        [0, 1] : 1
+  import,assemblies,freeSurfs                        [0, 1] : 1
+  import,assemblies,freeFaces                        [0, 1] : 1
+  import,assemblies,freePartsName             [NULL, value] : NULL
+  import,autoGroup,colour                                   : {{apply 0} {type F}}
+  import,autoGroup,layer                                    : {{apply 0} {type F} {value ANY}}
+  import,temporaryFiles                              [0, 1] : 0
+  import,resolveDegenerateLines             [ALWAYS, NEVER] : ALWAYS
+  import,recentreModel                        [AUTO, NEVER] : NEVER
+  import,convertUnits          [OFF, MM, CM, M, INCH, FOOT] : OFF
+  import,scaleModel                            [OFF, value] : OFF
+  import,calcMassProps                               [0, 1] : 0
+
+  ################# IGES Import parameters ################
+  import,iges,useDefaults                         [OFF, ON] : ON
+  import,iges,definitionEntities                  [OFF, ON] : DEFAULT
+  import,iges,blankedEntities                     [OFF, ON] : DEFAULT
+  import,iges,freeLines                           [OFF, ON] : DEFAULT
+  import,iges,freeLinesFont              [0, 1, 2, 3, 4, 5] : DEFAULT
+  import,iges,constructionGeom                    [OFF, ON] : DEFAULT
+  import,iges,linesAsNURBS                        [OFF, ON] : DEFAULT
+  import,iges,splitCreasedNURBS                   [OFF, ON] : DEFAULT
+  import,iges,turningAngle                          [value] : DEFAULT
+  import,iges,splitClosedNURBS                    [OFF, ON] : DEFAULT
+  import,iges,pcurves                 [PREF, GAPS, ON, OFF] : DEFAULT
+  import,iges,calcGoodTol                         [OFF, ON] : DEFAULT
+  import,iges,mergeDuplicates                     [OFF, ON] : DEFAULT
+  import,iges,boundUntrimmed                      [OFF, ON] : DEFAULT
+  import,iges,completeBoundaries                  [OFF, ON] : DEFAULT
+  import,iges,stitchFaces                         [OFF, ON] : DEFAULT
+  import,iges,buildBodies                         [OFF, ON] : DEFAULT
+  import,iges,extraAttributes                     [OFF, ON] : DEFAULT
+  ########################## END ##########################
+
+  ################ STEP Import parameters #################
+  import,step,freeLines                              [0, 1] : DEFAULT
+  import,step,freeSurfs                              [0, 1] : DEFAULT
+  import,step,freeFaces                              [0, 1] : DEFAULT
+  import,step,splitDiscontinuous                     [0, 1] : DEFAULT
+  import,step,splitAngle                            [value] : DEFAULT
+  import,step,importPFID                             [0, 1] : DEFAULT
+  import,step,importPMI                              [0, 1] : DEFAULT
+  ########################## END ##########################
+
+  ################ VDAFS Import parameters ################
+  import,vdafs,freeLines                             [0, 1] : DEFAULT
+  import,vdafs,freeSurfs                             [0, 1] : DEFAULT
+  import,vdafs,freeFaces                             [0, 1] : DEFAULT
+  import,vdafs,splitDiscontinuous                    [0, 1] : DEFAULT
+  import,vdafs,splitAngle                           [value] : DEFAULT
+  ########################## END ##########################
+
+  ################# STL Import parameters #################
+  import,stl,mergeVertices                        [NO, YES] : DEFAULT
+  import,stl,facettedSurfaces                     [NO, YES] : YES
+  import,stl,traceShells                          [OFF, ON] : DEFAULT
+  import,stl,reorient                             [OFF, ON] : DEFAULT
+  import,stl,units                  [MM, CM, M, INCH, FOOT] : DEFAULT
+  ########################## END ##########################
+
+  ################# 3DS Import parameters #################
+  import,3ds,facettedSurfaces                     [NO, YES] : NO
+  import,3ds,units                  [MM, CM, M, INCH, FOOT] : DEFAULT
+  ########################## END ##########################
+
+  ################ ACIS Import parameters #################
+  import,acis,freeLines                              [0, 1] : DEFAULT
+  import,acis,freeSurfs                              [0, 1] : DEFAULT
+  import,acis,freeFaces                              [0, 1] : DEFAULT
+  import,acis,splitDiscontinuous                     [0, 1] : DEFAULT
+  import,acis,splitAngle                            [value] : DEFAULT
+  import,acis,labelAttributeName                    [value] : DEFAULT
+  import,acis,layerAttributeName                    [value] : DEFAULT
+  import,acis,splitPeriodics                         [0, 1] : DEFAULT
+  ########################## END ##########################
+
+  ############### DXF/DWG Import parameters ###############
+  import,dxf,freeLines                               [0, 1] : DEFAULT
+  import,dxf,freeSurfs                               [0, 1] : DEFAULT
+  import,dxf,freeFaces                               [0, 1] : DEFAULT
+  import,dxf,importBlanked                           [0, 1] : DEFAULT
+  import,dxf,importProxy                             [0, 1] : DEFAULT
+  import,dxf,facetsToFaces                           [0, 1] : DEFAULT
+  import,dxf,splitDiscontinuous                      [0, 1] : DEFAULT
+  import,dxf,splitAngle                             [value] : DEFAULT
+  import,dxf,splitPeriodics                          [0, 1] : DEFAULT
+  import,dxf,blocksAsAssembly                        [0, 1] : DEFAULT
+  ########################## END ##########################
+
+  ############## Parasolid Import parameters ##############
+  import,parasolid,freeLines                         [0, 1] : DEFAULT
+  import,parasolid,freeSurfs                         [0, 1] : DEFAULT
+  import,parasolid,freeFaces                         [0, 1] : DEFAULT
+  import,parasolid,units            [MM, CM, M, INCH, FOOT] : MM
+  import,parasolid,splitDiscontinuous                [0, 1] : DEFAULT
+  import,parasolid,splitAngle                       [value] : DEFAULT
+  import,parasolid,explodeAssembly                   [0, 1] : 0
+  import,parasolid,splitClosedNURBS                  [0, 1] : 1
+  import,parasolid,splitSeamless                     [0, 1] : 1
+  ########################## END ##########################
+
+  ################ CADDS Import parameters ################
+  import,cadds,freeLines                             [0, 1] : DEFAULT
+  import,cadds,freeSurfs                             [0, 1] : DEFAULT
+  import,cadds,importBlanked                         [0, 1] : DEFAULT
+  import,cadds,pointTol                             [value] : DEFAULT
+  import,cadds,nameByPart                            [0, 1] : 1
+  ########################## END ##########################
+
+  ################ CATIA4 Import parameters ###############
+  import,catia,importNoShows                         [0, 1] : DEFAULT
+  import,catia,importNoPicks                         [0, 1] : DEFAULT
+  import,catia,importOnlyRoot                        [0, 1] : DEFAULT
+  import,catia,importOnlyMasterWorkspace             [0, 1] : DEFAULT
+  import,catia,dittosAsAssembly                      [0, 1] : 0
+  import,catia,solidmAsFacets                        [0, 1] : 1
+  import,catia,importPipes                           [0, 1] : DEFAULT
+  import,catia,layerFilter                 [-, LAYCUR, ALL] : ALL
+  import,catia,importLayerFilters                    [0, 1] : DEFAULT
+  import,catia,useAnalyticSurfs                      [0, 1] : DEFAULT
+  import,catia,boundUnusedNURBS                      [0, 1] : 0
+  import,catia,3DCurveRegen                          [0, 1] : DEFAULT
+  import,catia,3DCurvePref                           [0, 1] : DEFAULT
+  import,catia,freeLines                             [0, 1] : 0
+  import,catia,freeSurfs                             [0, 1] : 0
+  import,catia,freeFaces                             [0, 1] : 0
+  import,catia,splitDiscontinuous                    [0, 1] : DEFAULT
+  import,catia,splitAngle                           [value] : DEFAULT
+  import,catia,importer                    [DEFAULT, value] : DEFAULT
+  ########################## END ##########################
+
+  ################ CATIA5 Import parameters ###############
+  import,catia5,importHidden                         [0, 1] : DEFAULT
+  import,catia5,importCGR                            [0, 1] : DEFAULT
+  import,catia5,importLayerFilters                   [0, 1] : DEFAULT
+  import,catia5,freeLines                            [0, 1] : DEFAULT
+  import,catia5,freeSurfs                            [0, 1] : DEFAULT
+  import,catia5,freeFaces                            [0, 1] : DEFAULT
+  import,catia5,combinedFaces                        [0, 1] : DEFAULT
+  import,catia5,importer                   [DEFAULT, value] : DEFAULT
+  import,catia5,labelType                           [value] : ELEMENT
+  import,catia5,units               [MM, CM, M, INCH, FOOT] : MM
+  ########################## END ##########################
+
+  ################## UG Import parameters #################
+  import,ug,importHidden                             [0, 1] : DEFAULT
+  import,ug,importNonVisibleLayers                   [0, 1] : DEFAULT
+  import,ug,freeLines                                [0, 1] : DEFAULT
+  import,ug,freeSurfs                                [0, 1] : DEFAULT
+  import,ug,freeFaces                                [0, 1] : DEFAULT
+  import,ug,units                   [MM, CM, M, INCH, FOOT] : MM
+  import,ug,splitClosedNURBS                         [0, 1] : 1
+  import,ug,splitSeamless                            [0, 1] : 1
+  import,ug,assemblyPathPref                      [0, 1, 2] : DEFAULT
+  import,ug,importer                       [DEFAULT, value] : DEFAULT
+  ########################## END ##########################
+
+  ############### Inventor Import parameters ##############
+  import,inventor,freeLines                          [0, 1] : DEFAULT
+  import,inventor,freeSurfs                          [0, 1] : DEFAULT
+  import,inventor,freeFaces                          [0, 1] : DEFAULT
+  import,inventor,assemblyPathPref                [0, 1, 2] : DEFAULT
+  import,inventor,importUnfolded                     [0, 1] : DEFAULT
+  import,inventor,importer                 [DEFAULT, value] : DEFAULT
+  ########################## END ##########################
+
+  ################## SW Import parameters #################
+  import,sw,freeLines                                [0, 1] : DEFAULT
+  import,sw,freeSurfs                                [0, 1] : DEFAULT
+  import,sw,freeFaces                                [0, 1] : DEFAULT
+  import,sw,importHidden                             [0, 1] : DEFAULT
+  import,sw,importSuppressed                         [0, 1] : DEFAULT
+  import,sw,splitClosedNURBS                         [0, 1] : 1
+  import,sw,splitSeamless                            [0, 1] : 1
+  import,sw,assemblyPathPref                      [0, 1, 2] : DEFAULT
+  import,sw,importer                       [DEFAULT, value] : DEFAULT
+  ########################## END ##########################
+
+  ################# ProE Import parameters ################
+  import,proe,freeLines                              [0, 1] : DEFAULT
+  import,proe,freeSurfs                              [0, 1] : DEFAULT
+  import,proe,freeFaces                              [0, 1] : DEFAULT
+  import,proe,vertexTol                             [value] : DEFAULT
+  import,proe,facets                                 [0, 1] : DEFAULT
+  import,proe,importBlanked                          [0, 1] : DEFAULT
+  import,proe,importer                     [DEFAULT, value] : DEFAULT
+  ########################## END ##########################
+
+  ################ ANSYS Import parameters ################
+  import,ansys,freeLines                             [0, 1] : DEFAULT
+  import,ansys,freeSurfs                             [0, 1] : DEFAULT
+  import,ansys,splitDiscontinuous                    [0, 1] : DEFAULT
+  import,ansys,splitAngle                           [value] : DEFAULT
+  ########################## END ##########################
+
+  ################# AGPS Import parameters ################
+  import,agps,freeLines                              [0, 1] : DEFAULT
+  import,agps,freeSurfs                              [0, 1] : DEFAULT
+  import,agps,splitDiscontinuous                     [0, 1] : DEFAULT
+  import,agps,splitAngle                            [value] : DEFAULT
+  import,agps,keepTempEntities                       [0, 1] : DEFAULT
+  import,agps,pcurveToXYZTol                        [value] : DEFAULT
+  ########################## END ##########################
+
+  ################# SC03 Import parameters ################
+  import,sc03,userAttrs                              [0, 1] : DEFAULT
+  import,sc03,strictPMPLUS                           [0, 1] : DEFAULT
+  import,sc03,buildFacesIf2D                         [0, 1] : DEFAULT
+  import,sc03,flatten2D                              [0, 1] : DEFAULT
+  import,sc03,ignoreCurveTrimming                    [0, 1] : DEFAULT
+  import,sc03,importCL                               [0, 1] : DEFAULT
+  ########################## END ##########################
+
+  ############## JT/PLMXML Import parameters #############
+  import,jt,freeLines                                [0, 1] : DEFAULT
+  import,jt,freeSurfs                                [0, 1] : DEFAULT
+  import,jt,freeFaces                                [0, 1] : DEFAULT
+  import,jt,splitClosedNURBS                         [0, 1] : DEFAULT
+  import,jt,splitSeamless                            [0, 1] : DEFAULT
+  import,jt,onlyFacets                           [0, 1, -1] : DEFAULT
+  import,jt,facetLOD                                [value] : DEFAULT
+  import,jt,importPMI                                [0, 1] : DEFAULT
+  import,jt,stitchPolyshells                        [value] : DEFAULT
+  ########################## END ##########################
+
+  ################# PRC Import parameters #################
+  import,prc,freeLines                               [0, 1] : DEFAULT
+  import,prc,freeSurfs                               [0, 1] : DEFAULT
+  import,prc,freeFaces                               [0, 1] : DEFAULT
+  import,prc,onlyFacets                              [0, 1] : DEFAULT
+  ########################## END ##########################
+
+  ################# PDF Import parameters #################
+  import,pdf,freeLines                               [0, 1] : DEFAULT
+  import,pdf,freeSurfs                               [0, 1] : DEFAULT
+  import,pdf,freeFaces                               [0, 1] : DEFAULT
+  import,pdf,onlyFacets                              [0, 1] : DEFAULT
+  ########################## END ##########################
+
+  ############### Flite Import parameters ################
+  import,flite,kntred                                [0, 1] : 0
+  import,flite,kntredtol                            [value] : DEFAULT
+  ########################## END ##########################
+
+  ############### SOLAR Import parameters ################
+  import,solar,kntred                                [0, 1] : 0
+  import,solar,kntredtol                            [value] : DEFAULT
+  ########################## END ##########################
+
+repair                                               [0, 1] : 1
+
+  repair,maxTol                            [DEFAULT, value] : DEFAULT
+  repair,buildOption [SOLIDS, FACES, SOLIDS+FACES, UNKNOWN] : UNKNOWN
+  repair,boundUntrimmed               [AUTO, ALWAYS, NEVER] : AUTO
+  repair,wireframe                                   [0, 1] : 0
+  repair,approximateSurfaces                         [0, 1] : 0
+  repair,voids                       [Delete, Remove, Keep] : Delete
+  repair,deleteWireframe                             [0, 1] : 1
+  repair,deleteUnusedFaces                           [0, 1] : 0
+  repair,calcMassProps                               [0, 1] : 0
+
+transform                                            [0, 1] : 0
+
+  transform,joinBodies,apply                         [0, 1] : 0
+  transform,joinBodies,tol                 [DEFAULT, value] : DEFAULT
+  transform,joinBodies,mode                  [UNITE, SHARE] : UNITE
+  transform,joinBodies,allowVoids                    [0, 1] : 0
+  transform,joinFragmented,apply                     [0, 1] : 0
+  transform,joinFragmented,tol             [DEFAULT, value] : DEFAULT
+  transform,joinFaces,apply                          [0, 1] : 0
+  transform,joinFaces,type                   [SLIVERS, ALL] : SLIVERS
+  transform,joinFaces,width                [DEFAULT, value] : DEFAULT
+  transform,joinFaces,faceangle                     [value] : 1.0
+  transform,joinFaces,edgeangle                     [value] : 5.0
+  transform,joinFaces,filtermultiloop                [0, 1] : 1
+  transform,joinFaces,filterlarge                    [0, 1] : 1
+  transform,joinFaces,filtermultisided               [0, 1] : 1
+  transform,joinFaces,rejectthreesided               [0, 1] : 0
+  transform,joinFaces,rejectmultisided               [0, 1] : 0
+  transform,joinFaces,matchlayers                    [0, 1] : 1
+  transform,joinFaces,matchcolours                   [0, 1] : 1
+  transform,joinFaces,change               [DEFAULT, value] : DEFAULT
+  transform,joinEdges,apply                          [0, 1] : 0
+  transform,joinEdges,angle                         [value] : 1.0
+  transform,collapse,apply                           [0, 1] : 0
+  transform,collapse,type                    [FACES, EDGES] : EDGES
+  transform,collapse,length                [DEFAULT, value] : DEFAULT
+  transform,narrow,apply                             [0, 1] : 0
+  transform,narrow,width                   [DEFAULT, value] : DEFAULT
+  transform,narrow,type               [NECKS, TAPERS, BOTH] : NECKS
+  transform,narrow,fixaction                 [SPLIT, PINCH] : PINCH
+  transform,pinch,apply                              [0, 1] : 0
+  transform,pinch,angle                    [DEFAULT, value] : 5.0
+  transform,pinch,tol                      [DEFAULT, value] : DEFAULT
+  transform,pinch,filletsonly                        [0, 1] : 0
+  transform,pinch,fixaction         [MERGE, IMPRINT, PINCH, PINCH2] : MERGE
+  transform,holes,removeHoles                        [0, 1] : 0
+  transform,holes,plugHoles                          [0, 1] : 0
+  transform,holes,drillTips                          [0, 1] : 0
+  transform,holes,centrelines                        [0, 1] : 0
+  transform,holes,blind                              [0, 1] : 1
+  transform,holes,through                            [0, 1] : 1
+  transform,holes,complex                            [0, 1] : 0
+  transform,holes,searchMode                   [FAST, FULL] : FAST
+  transform,holes,check2dSize                        [0, 1] : 1
+  transform,holes,check3dSize                        [0, 1] : 0
+  transform,holes,size2d                   [DEFAULT, value] : DEFAULT
+  transform,holes,size3d                   [DEFAULT, value] : DEFAULT
+  transform,holes,tol                      [DEFAULT, value] : DEFAULT
+  transform,holes,xsect                [CIRC, NONCIRC, ANY] : CIRC
+  transform,holes,delete                             [0, 1] : 1
+  transform,protrusions,remove                       [0, 1] : 0
+  transform,protrusions,check2dSize                  [0, 1] : 1
+  transform,protrusions,check3dSize                  [0, 1] : 0
+  transform,protrusions,size2d             [DEFAULT, value] : DEFAULT
+  transform,protrusions,size3d             [DEFAULT, value] : DEFAULT
+  transform,protrusions,tol                [DEFAULT, value] : DEFAULT
+  transform,protrusions,xsect          [CIRC, NONCIRC, ANY] : CIRC
+  transform,removeSeams,apply                        [0, 1] : 0
+  transform,removeSeams,pln                          [0, 1] : 0
+  transform,removeSeams,cyl                          [0, 1] : 1
+  transform,removeSeams,con                          [0, 1] : 1
+  transform,removeSeams,sph                          [0, 1] : 0
+  transform,removeSeams,tor                          [0, 1] : 0
+  transform,removeSeams,tol                [DEFAULT, value] : DEFAULT
+  transform,deleteFillets,apply                      [0, 1] : 0
+  transform,deleteFillets,radmax           [DEFAULT, value] : DEFAULT
+  transform,deleteFillets,radtol           [DEFAULT, value] : DEFAULT
+  transform,deleteFillets,type          [CONST, VARY, BOTH] : BOTH
+  transform,deleteFillets,tol              [DEFAULT, value] : DEFAULT
+  transform,deleteFillets,angtol           [DEFAULT, value] : 3.0
+  transform,deleteFillets,joinedges                  [0, 1] : 1
+  transform,deleteChamfers,apply                     [0, 1] : 0
+  transform,deleteChamfers,d1              [DEFAULT, value] : DEFAULT
+  transform,deleteChamfers,ang1            [DEFAULT, value] : 90.0
+  transform,deleteChamfers,d2                  [OFF, value] : OFF
+  transform,deleteChamfers,ang2                [OFF, value] : OFF
+  transform,deleteChamfers,tol             [DEFAULT, value] : DEFAULT
+  transform,deleteChamfers,angtol          [DEFAULT, value] : 3.0
+  transform,deleteChamfers,joinedges                 [0, 1] : 1
+  transform,imprintEdges,apply                       [0, 1] : 0
+  transform,imprintEdges,tol               [DEFAULT, value] : DEFAULT
+  transform,imprintBodies,apply                      [0, 1] : 0
+  transform,imprintBodies,tol              [DEFAULT, value] : DEFAULT
+  transform,imprintBodies,ang              [DEFAULT, value] : DEFAULT
+  transform,deleteBodies,apply                       [0, 1] : 0
+  transform,deleteBodies,method            [VOLUME, BOXDIA] : BOXDIA
+  transform,deleteBodies,size              [DEFAULT, value] : DEFAULT
+  transform,externalFilter,apply                     [0, 1] : 0
+  transform,externalFilter,tol             [DEFAULT, value] : DEFAULT
+  transform,externalFilter,maxgap          [DEFAULT, value] : DEFAULT
+  transform,externalFilter,mode     [AGGRESSIVE, CONSERVATIVE] : AGGRESSIVE
+  transform,externalFilter,perf                  [1,...,10] : 2
+  transform,externalFilter,level [INSTANCES, BODIES, FACES] : BODIES
+  transform,wrap,apply                               [0, 1] : 0
+  transform,wrap,facetSag                  [DEFAULT, value] : DEFAULT
+  transform,wrap,facetTurn                 [DEFAULT, value] : 30
+  transform,wrap,facetSize                 [DEFAULT, value] : DEFAULT
+  transform,decimate,apply                           [0, 1] : 0
+  transform,decimate,tol                   [DEFAULT, value] : DEFAULT
+  transform,unfacet,apply                            [0, 1] : 0
+  transform,unfacet,edge_vertextol         [DEFAULT, value] : 0.01:mm
+  transform,unfacet,edge_sagtol            [DEFAULT, value] : 0.04:mm
+  transform,unfacet,face_vertextol         [DEFAULT, value] : 0.01:mm
+  transform,unfacet,face_sagtol            [DEFAULT, value] : 0.04:mm
+  transform,unfacet,face_normtol           [DEFAULT, value] : 35.0
+  transform,unfacet,no_unclosed            [DEFAULT, value] : 1
+  transform,deform,apply                             [0, 1] : 0
+  transform,deform,edgeTol                 [DEFAULT, value] : DEFAULT
+  transform,deform,interiorTol             [DEFAULT, value] : DEFAULT
+  transform,deform,normalTol               [DEFAULT, value] : 5.0
+  transform,calcMassProps                            [0, 1] : 0
+
+prepare                                              [0, 1] : 1
+
+  ################# JT Prepare parameters #################
+  'Overlapping curves'               , R-CU-EM  : {{apply 0} {tol DEFAULT}}
+  'Short edges'                      , R-ED-TI  : {{apply 1} {tol DEFAULT}}
+  'Narrow faces'                     , R-FA-NA  : {{apply 0} {widthmin DEFAULT} {factol DEFAULT} {onlysimple 1} {twosided 1}}
+  'Closed surfaces'                  , R-SU-CL  : {{apply 1} {tol DEFAULT}}
+  'Degenerate surfaces'              , R-SU-DC  : {{apply 0} {tol DEFAULT} {simplify 1} {split 0} {flare 0} {refit 0} {trimback DEFAULT} {fittol DEFAULT}}
+  'Degenerate surface corners'       , R-SU-DP  : {{apply 1} {angmin 5.0} {angtype FLAT} {tol DEFAULT}}
+  'Smooth surfaces'                  , R-SU-SMO : {{apply 0} {tol DEFAULT}}
+  'Surface parameterisation'         , R-SU-PCN : {{apply 1} {condition SPEED} {rate:local 3} {rate:global 5} {tol DEFAULT}}
+  'Curve parameterisation'           , R-CU-PCN : {{apply 0} {condition SPEED} {rate 3} {tol DEFAULT}}
+  'Folded curves'                    , R-CU-FO  : {{apply 1} {tol DEFAULT}}
+  'Missing surfaces'                 , R-FA-EMD : {{apply 0} {tol DEFAULT}}
+  'Undersize surfaces'               , R-FA-XTN : {{apply 0} {undersize 0.99}}
+  'Zero-area faces'                  , R-FA-ZAR : {{apply 1} {tol DEFAULT}}
+  'Refit faces'                      , R-FA-RPL : {{apply 0} {tol DEFAULT}}
+  'Surface simplification'           , R-SU-SIM : {{apply 1} {tol DEFAULT} {type all}}
+  'Edge simplification'              , R-CU-SIM : {{apply 0} {tol DEFAULT}}
+  'Non-NURBS surfaces'               , R-FA-AN  : {{apply 1} {tor 1} {sph 1} {con 0} {cyl 0} {pln 0}}
+  'Non-NURBS edges'                  , R-ED-AN  : {{apply 1}}
+  'Rational NURBS surfaces'          , R-SU-RAT : {{apply 0} {tol DEFAULT}}
+  'Rational NURBS curves'            , R-CU-RAT : {{apply 0} {tol DEFAULT}}
+  'Low-degree surfaces'              , R-SU-LDG : {{apply 0} {degree 3} {ignoredegr1 1}}
+  'Low-degree curves'                , R-CU-LDG : {{apply 0} {degree 3} {ignoredegr1 1}}
+  'High-degree surfaces'             , R-SU-HD  : {{apply 0} {tol DEFAULT} {degree 6}}
+  'High-degree curves'               , R-CU-HD  : {{apply 0} {tol DEFAULT} {degree 6}}
+  'Dense NURBS surface definition'   , R-SU-KNT : {{apply 0} {tol DEFAULT}}
+  'Dense NURBS curve definition'     , R-CU-KNT : {{apply 0} {tol DEFAULT}}
+  'Curve knot hyper-multiplicities'  , R-CU-HMK : {{apply 0} {tol DEFAULT} {maxmult 1}}
+  'Surface knot hyper-multiplicities', R-SU-HMK : {{apply 0} {tol DEFAULT} {maxmult 1}}
+  'Seamless faces'                   , R-FA-SEA : {{apply 0}}
+  'Oversize surfaces'                , R-FA-TRM : {{apply 1} {percent 5}}
+  'Non-tangent patches'              , R-SU-NT  : {{apply 1} {test G1} {angle 1.0E-06} {c1mode REL} {c1tol 1.0E-03} {tol DEFAULT} {factor 3}}
+  'Non-tangent segments'             , R-CU-NT  : {{apply 1} {test G1} {angle 1.0E-06} {c1mode REL} {c1tol 1.0E-03} {tol DEFAULT}}
+  'Non-smooth patches'               , R-SU-NS  : {{apply 1} {ratio 1.0E-02}}
+  'Non-smooth segments'              , R-CU-NS  : {{apply 1} {ratio 1.0E-03}}
+  'Degenerate tangent'               , R-CU-G1D : {{apply 1} {tol DEFAULT}}
+  'Join short edges'                 , R-ED-JOI : {{apply 0} {tol DEFAULT} {angle 2.0}}
+  'Shared topology'                  , R-MO-POP : {{apply 0}}
+  'Sharp corner angle'               , R-LO-SA  : {{apply 0} {angle 5.0} {tol DEFAULT} {filletsonly 0} {fixaction MERGE}}
+  'Large edge-surface gap'           , R-FA-EG  : {{apply 0} {tol DEFAULT} {lock NOlock}}
+  'Sloppy surface singularity'       , R-FA-VFS : {{apply 1} {tol DEFAULT}}
+  ########################## END ##########################
+  prepare,calcMassProps                              [0, 1] : 0
+
+export                                               [0, 1] : 1
+
+  export,system               [GenericIGES, IGESforNXi6...] : JT
+  export,fileSuffix                           [NULL, value] : _cf
+  export,fileExtension                     [DEFAULT, value] : DEFAULT
+  export,always                                      [0, 1] : 0
+  export,restoreModel                                [0, 1] : 1
+  export,assemblies,explode                          [0, 1] : 0
+  export,sendLabels        [OFF, NAME, XASG, TYPART, COMBO] : XASG
+  export,sendColours                              [OFF, ON] : ON
+  export,sendLayers                               [OFF, ON] : ON
+  export,sendUserAttrs                            [OFF, ON] : ON
+  export,sendGeomForm                     [OFF, XASG, AUTO] : OFF
+  export,textNoteEnabled                             [0, 1] : 0
+  export,calcMassProps                               [0, 1] : 0
+
+  ################## JT Export parameters #################
+  export,jt,fileFormat                   [AUTO, 64, 70,...] : AUTO
+  export,jt,fileStructure                   [MONOLTHIC,...] : MONOLITHIC
+  export,jt,includeBrep                              [0, 1] : 1
+  export,jt,includeMassProps                         [0, 1] : 0
+  export,jt,kgmmUnits                                [0, 1] : 0
+  export,jt,numLODs                               [1, 2, 3] : 3
+  export,jt,multiSolidsAsAsm                         [0, 1] : 0
+  export,jt,useConfigFile                            [0, 1] : 0
+  export,jt,configFile                        [NULL, value] : C:/CADfix11/syntax/plmxml/CADfix-Daimler-JT.config
+  ########################## END ##########################
