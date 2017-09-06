@@ -1,2 +1,2 @@
-inputFile = asdf.asd
+inputFile = https://dmcupfinal.s3.amazonaws.com/PROJECT/103555256345590387002%40google.com/Documents/1504727361--739430-sanitized-testcube_05mm.stl?AWSAccessKeyId=AKIAIZPP46XXRK6PBF6A&Expires=1504730961&Signature=DLTgsftJmWzV9sfqSNWGwjRYnL8%3D
 convertTo = jt

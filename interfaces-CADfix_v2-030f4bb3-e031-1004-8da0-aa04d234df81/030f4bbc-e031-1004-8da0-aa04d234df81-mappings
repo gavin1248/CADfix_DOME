@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<modelinterface type="DomeModelInterface" id="030f4bbc-e031-1004-8da0-aa04d234df81" name="Default Interface">
+    <interfaceinfo>
+        <version>0.0.1</version>
+        <defaultinterface/>
+    </interfaceinfo>
+    <mappingsandintermediates>
+        <mappings>
+            <interfacemappings>
+                <mappedParameter name="convertTo" idRef="030f4bdc-e031-1004-8da0-aa04d234df81">
+                    <parameter name="convertTo" idRef="030f4bda-e031-1004-8da0-aa04d234df81" idModelRef="030f4bb3-e031-1004-8da0-aa04d234df81"/>
+                </mappedParameter>
+                <mappedParameter name="outputFile" idRef="030f4bdf-e031-1004-8da0-aa04d234df81">
+                    <parameter name="outputFile" idRef="030f4bdd-e031-1004-8da0-aa04d234df81" idModelRef="030f4bb3-e031-1004-8da0-aa04d234df81"/>
+                </mappedParameter>
+                <mappedParameter name="inputFile" idRef="030f4bc7-e031-1004-8da0-aa04d234df81">
+                    <parameter name="inputFile" idRef="030f4bc5-e031-1004-8da0-aa04d234df81" idModelRef="030f4bb3-e031-1004-8da0-aa04d234df81"/>
+                </mappedParameter>
+                <mappedParameter name="outputFile" idRef="030f4bde-e031-1004-8da0-aa04d234df81">
+                    <parameter name="outputFile" idRef="030f4bdd-e031-1004-8da0-aa04d234df81" idModelRef="030f4bb3-e031-1004-8da0-aa04d234df81"/>
+                </mappedParameter>
+                <mappedParameter name="inputFile" idRef="030f4bc6-e031-1004-8da0-aa04d234df81">
+                    <parameter name="inputFile" idRef="030f4bc5-e031-1004-8da0-aa04d234df81" idModelRef="030f4bb3-e031-1004-8da0-aa04d234df81"/>
+                </mappedParameter>
+                <mappedParameter name="convertTo" idRef="030f4bdb-e031-1004-8da0-aa04d234df81">
+                    <parameter name="convertTo" idRef="030f4bda-e031-1004-8da0-aa04d234df81" idModelRef="030f4bb3-e031-1004-8da0-aa04d234df81"/>
+                </mappedParameter>
+            </interfacemappings>
+        </mappings>
+        <intermediateobjects/>
+    </mappingsandintermediates>
+    <lookupdata>
+        <objectmap>
+            <parameter name="inputFile" idRef="030f4bc5-e031-1004-8da0-aa04d234df81" idModelRef="030f4bb3-e031-1004-8da0-aa04d234df81" description="key"/>
+            <parameter name="inputFile" idRef="030f4bc6-e031-1004-8da0-aa04d234df81" description="value"/>
+            <parameter name="outputFile" idRef="030f4bdd-e031-1004-8da0-aa04d234df81" idModelRef="030f4bb3-e031-1004-8da0-aa04d234df81" description="key"/>
+            <parameter name="outputFile" idRef="030f4bde-e031-1004-8da0-aa04d234df81" description="value"/>
+            <parameter name="convertTo" idRef="030f4bda-e031-1004-8da0-aa04d234df81" idModelRef="030f4bb3-e031-1004-8da0-aa04d234df81" description="key"/>
+            <parameter name="convertTo" idRef="030f4bdb-e031-1004-8da0-aa04d234df81" description="value"/>
+        </objectmap>
+        <viewobjectmap>
+            <parameter name="outputFile" idRef="030f4bde-e031-1004-8da0-aa04d234df81" description="key"/>
+            <parameter name="outputFile" idRef="030f4bdf-e031-1004-8da0-aa04d234df81" description="value"/>
+            <parameter name="inputFile" idRef="030f4bc6-e031-1004-8da0-aa04d234df81" description="key"/>
+            <parameter name="inputFile" idRef="030f4bc7-e031-1004-8da0-aa04d234df81" description="value"/>
+            <parameter name="convertTo" idRef="030f4bdb-e031-1004-8da0-aa04d234df81" description="key"/>
+            <parameter name="convertTo" idRef="030f4bdc-e031-1004-8da0-aa04d234df81" description="value"/>
+        </viewobjectmap>
+        <relationobjectmap/>
+    </lookupdata>
+</modelinterface>

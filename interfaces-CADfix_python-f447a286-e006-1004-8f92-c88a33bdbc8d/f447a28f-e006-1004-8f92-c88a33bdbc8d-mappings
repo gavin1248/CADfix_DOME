@@ -8,14 +8,14 @@
     <mappingsandintermediates>
         <mappings>
             <interfacemappings>
-                <mappedParameter name="outputFile" idRef="f447a2a0-e006-1004-8f92-c88a33bdbc8d">
-                    <parameter name="outputFile" idRef="f447a29e-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>
+                <mappedParameter name="inputFile" idRef="f447a29a-e006-1004-8f92-c88a33bdbc8d">
+                    <parameter name="inputFile" idRef="f447a298-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>
                 </mappedParameter>
                 <mappedParameter name="convertTo" idRef="f447a29d-e006-1004-8f92-c88a33bdbc8d">
                     <parameter name="convertTo" idRef="f447a29b-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>
                 </mappedParameter>
-                <mappedParameter name="inputFile" idRef="f447a29a-e006-1004-8f92-c88a33bdbc8d">
-                    <parameter name="inputFile" idRef="f447a298-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>
+                <mappedParameter name="outputFile" idRef="f447a2a0-e006-1004-8f92-c88a33bdbc8d">
+                    <parameter name="outputFile" idRef="f447a29e-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>
                 </mappedParameter>
                 <mappedParameter name="convertTo" idRef="f447a29c-e006-1004-8f92-c88a33bdbc8d">
                     <parameter name="convertTo" idRef="f447a29b-e006-1004-8f92-c88a33bdbc8d" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>

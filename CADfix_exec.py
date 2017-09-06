@@ -20,7 +20,7 @@ with open('in.txt') as f:
         inputs[key] = value
 
 # download the input file to the local dir
-# import filemanagement
+import filemanagement
 # Note that first DOME variable is called inputFile
 # !!! Problem, how do I get the original file name or more importantly the extension
 input_file = "input.stl"
@@ -28,7 +28,6 @@ filemanagement.download_data(inputs["inputFile"], input_file)
 
 
 # Grab credentials
-# !!! Where does the JSON that this uses come from?
 creds = filemanagement.get_credentials()
 print "Got S3 creds....\n"
 
@@ -53,7 +52,7 @@ input_noext = os.path.splitext(input_file)[0]
 output_file = input_noext + "_cf." + inputs["convertTo"]
 
 # Upload and get url
-output_url = upload_file(output_file, creds)
+output_url = filemanagement.upload_file(output_file, creds)
 
 # Write out to out.txt then close
 target.write("outputFile = " + output_url)
