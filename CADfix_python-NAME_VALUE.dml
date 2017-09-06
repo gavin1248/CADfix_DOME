@@ -32,6 +32,24 @@
                 </dataobject>
             </data>
         </parameter>
+        <parameter id="030f4b70-e031-1004-8da0-aa04d234df81" name="filemanagement">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\Users\Gavin\Documents\GitHub\CADfix_DOME\CADfix_exec.py</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
+        <parameter id="030f4b71-e031-1004-8da0-aa04d234df81" name="credentials">
+            <currentType value="File"/>
+            <data>
+                <dataobject type="File">
+                    <filePath>C:\Users\Gavin\Documents\GitHub\CADfix_DOME\credentials.json</filePath>
+                    <fileType>Binary</fileType>
+                </dataobject>
+            </data>
+        </parameter>
     </parameters>
     <contexts>
         <context id="BUILD_CXT" name="Build View">
@@ -44,6 +62,8 @@
         <context id="FILE_CXT" name="Files">
             <modelobjects>
                 <parameter name="CADfix_exec" idRef="030f4b4b-e031-1004-8da0-aa04d234df81" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>
+                <parameter name="filemanagement" idRef="030f4b70-e031-1004-8da0-aa04d234df81" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>
+                <parameter name="credentials" idRef="030f4b71-e031-1004-8da0-aa04d234df81" idModelRef="f447a286-e006-1004-8f92-c88a33bdbc8d"/>
             </modelobjects>
         </context>
     </contexts>
@@ -101,6 +121,12 @@
             <isExcuteOnServer value="true"/>
             <fileType>file:///</fileType>
             <file>C:\Users\Gavin\Documents\GitHub\CADfix_DOME\CADfix_exec.py</file>
+        </auxfile>
+        <auxfile id="030f4b72-e031-1004-8da0-aa04d234df81" name="credentials">
+            <isMainModelFile value="false"/>
+            <isExcuteOnServer value="true"/>
+            <fileType>file:///</fileType>
+            <file>C:\Users\Gavin\Documents\GitHub\CADfix_DOME\credentials.json</file>
         </auxfile>
     </auxfiles>
 </model>

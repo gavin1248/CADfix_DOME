@@ -23,7 +23,9 @@ with open('in.txt') as f:
 # import filemanagement
 # Note that first DOME variable is called inputFile
 # !!! Problem, how do I get the original file name or more importantly the extension
-#filemanagement.download_data(inputs["inputFile"], "input.stp")
+input_file = "input.stl"
+filemanagement.download_data(inputs["inputFile"], input_file)
+
 
 # Grab credentials
 # !!! Where does the JSON that this uses come from?
@@ -41,15 +43,18 @@ from subprocess import call
 CADfix_loc = "\"c:\\Program Files (x86)\\CADfix 11\\bin\\runcadfconsole.exe\""
 # Wizard file, for example to_jt.cwc
 wiz_file = "to_" + inputs["convertTo"] + ".cwc"
-print CADfix_loc + " -wait -BATCH -config " + wiz_file + " " + inputs["inputFile"]
+print CADfix_loc + " -wait -BATCH -config " + wiz_file + " " + input_file
 # This command looks like 
 # "c:\Program Files (x86)\CADfix 11\bin\runcadfconsole.exe" -wait -BATCH -config wizard.cwc file.stp
-#call(CADfix_loc + " -wait -BATCH -config " + wiz_file + " " + inputs["inputFile"], shell=False)
+call(CADfix_loc + " -wait -BATCH -config " + wiz_file + " " + input_file, shell=False)
 
 # Create output file name
-input_noext = os.path.splitext(inputs["inputFile"])[0]
+input_noext = os.path.splitext(input_file)[0]
 output_file = input_noext + "_cf." + inputs["convertTo"]
 
+# Upload and get url
+output_url = upload_file(output_file, creds)
+
 # Write out to out.txt then close
-target.write("outputFile = " + output_file)
+target.write("outputFile = " + output_url)
 target.close()
