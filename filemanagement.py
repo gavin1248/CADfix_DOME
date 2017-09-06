@@ -64,3 +64,32 @@ def upload_report(output_file, creds):
        )
 
     return signed_url
+
+
+def upload_file(output_file, creds):
+    """
+    Uploads specified local file
+    output_file -- String of file name including extension
+    creds -- AWS credentials
+    """
+    # Make connection
+    from boto.s3.connection import S3Connection
+    conn = S3Connection(creds["access_key"], creds["secret_key"])
+
+    # NEED NEW BUCKET
+    bucket = conn.get_bucket('151602')
+
+    from boto.s3.key import Key
+    k = Key(bucket)
+    k.key = output_file
+    k.set_contents_from_filename(output_file)
+
+    signed_url = conn.generate_url(
+           expires_in=1814400,
+           method='GET',
+           bucket='151602',
+           key=k.key,
+           query_auth=True
+       )
+
+    return signed_url
